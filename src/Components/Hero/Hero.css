@@ -1,0 +1,253 @@
+/* .hero-profile {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 25px;
+  border: 3px solid palegreen;
+  box-shadow: white;
+  margin-top: 120px;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+   
+}
+.hero h1{
+    text-align: center;
+    font-size: 90px;
+    font-weight: 500;
+    width: 70%;
+}
+.hero h1 span{
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.6%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero p{
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.hero-connect{
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.6%);;
+    cursor: pointer;
+}
+.hero-resume{
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.hero-connect:hover{
+    border: 2px solid white;
+
+}
+.hero-resume:hover{
+    border-color: #b415ff;
+}
+
+
+@media (max-width:768px){
+
+  
+    .hero img{
+        margin-bottom: 120px;
+        width: 400px;
+        height: 400px;
+        
+    }
+    .hero h1{
+        margin-top: 50px;
+        width: 90%;
+        font-size: 50px;
+      
+    }
+    .hero p{
+        width: 60%;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 10px 0px;
+    }
+    .hero-action{
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+
+
+    }
+    .hero-connect{
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+    .hero-resume{
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+} */
+
+
+
+
+
+
+
+
+:root {
+  --primary: #3A86FF;        /* Electric Blue */
+  --secondary: #8338EC;      /* Neon Purple */
+  --background: #0F0F0F;     /* Deep Charcoal */
+  --text: #EAEAEA;           /* Soft White */
+  --accent: #00F5D4;         /* Aqua Cyan */
+}
+
+/* 🌟 Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+  color: var(--text);
+  background: black;
+  padding-top: 80px;
+  text-align: center;
+}
+
+/* Profile Image */
+.hero-profile {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 25px;
+  margin-top: 120px;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 25px rgba(0, 245, 212, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-profile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(0, 245, 212, 0.6);
+}
+
+/* Hero Heading */
+.hero h1 {
+  font-size: 90px;
+  font-weight: 600;
+  width: 70%;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  background: linear-gradient(267deg, var(--primary) 0%, var(--secondary) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Paragraph */
+.hero p {
+  width: 55%;
+  text-align: center;
+  font-size: 22px;
+  line-height: 38px;
+  color: rgba(234, 234, 234, 0.85);
+}
+
+/* Buttons */
+.hero-action {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+/* Connect Button */
+.hero-connect {
+  padding: 22px 45px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(58, 134, 255, 0.4);
+}
+
+.hero-connect:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 30px rgba(131, 56, 236, 0.5);
+}
+
+/* Resume Button */
+.hero-resume {
+  padding: 22px 75px;
+  border-radius: 50px;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-resume:hover {
+  background: var(--accent);
+  color: var(--background);
+  transform: scale(1.05);
+}
+
+/* 🌐 Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    gap: 25px;
+    padding-top: 60px;
+  }
+
+  .hero img {
+    width: 250px;
+    height: 250px;
+    margin-top: 60px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    width: 90%;
+  }
+
+  .hero p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .hero-action {
+    flex-direction: column;
+    gap: 18px;
+    font-size: 18px;
+  }
+
+  .hero-connect,
+  .hero-resume {
+    padding: 18px 40px;
+    border-radius: 40px;
+    width: 80%;
+    max-width: 300px;
+  }
+}
